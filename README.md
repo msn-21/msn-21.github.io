@@ -1,6 +1,7 @@
 ### Welcome to msn-21.github.io
 This website is a very basic website, which I used to just put some games that I like on it.
-     *I have not created or own any of the games on this site.
+
+*I have not created or own any of the games on this site.
 
 <!--
 **msn-21/msn-21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
