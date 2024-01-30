@@ -1,4 +1,4 @@
-### Welcome to msn-21.github.io
+### Welcome to msn-21.github.io!
 This website is a very basic website, which I used to just put some games that I like on it.
 
 *I have not created or own any of the games on this site.
