@@ -1,7 +1,7 @@
 ### Welcome to msn-21.github.io!
-This website is a game website, which has a bunch of working unblocked games on it.
+This website is a game website, which has a bunch of *working* unblocked games on it.
 
-*I have not created or own any of the games on this site.
+*Note: I have not created or own any of the games on this site.
 
 <!--
 **msn-21/msn-21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
