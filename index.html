@@ -48,12 +48,17 @@
     }
 
         /* New CSS styling for the header content */
-    .header-content {
+   .header-content {
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
+  @font-face {
+    font-family: 'Blanka';
+    src: url('blanka-font.otf') format('truetype'); /* Provide the correct path to your custom font file */
+  }
+    
   .header-section {
     background-color: #E1E2E1; /* Background color for the header section */
     padding: 10px 0; /* Add padding to the header section */
@@ -69,6 +74,11 @@
 
   .header-content img {
     border-radius: 0; /* Remove border-radius for header image */
+  }
+
+  .header-text {
+    color: white;
+    font-family: 'Blanka'; /* Apply the custom font to the header text */
   }
 
   h1 {
