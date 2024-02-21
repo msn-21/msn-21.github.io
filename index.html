@@ -54,45 +54,42 @@
       justify-content: center;
     }
 
-  @font-face {
-    font-family: 'Blanka';
-    src: url('/blanka-font.otf') format('truetype'); /* Provide the correct path to your custom font file */
-  }
-    
-  .header-section {
-    background-color: #E1E2E1; /* Background color for the header section */
-    padding: 10px 0; /* Add padding to the header section */
-  }
+    @font-face {
+      font-family: 'Blanka';
+      src: url('/blanka-font.otf') format('opentype'); /* Check the correct font file format */
+    }
 
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #E1E2E1; /* Background color for the header content */
-    padding: 10px; /* Add padding to the header content */
-  }
+    .header-section {
+      background-color: #E1E2E1;
+      padding: 10px 0;
+    }
 
-  .header-content img {
-    border-radius: 0; /* Remove border-radius for header image */
-  }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #E1E2E1;
+      padding: 10px;
+    }
 
-  .header-text {
-    color: white;
-    font-family: 'Blanka'; /* Apply the custom font to the header text */
-  }
+    .header-content img {
+      border-radius: 0;
+    }
 
-  h1 {
-    color: #E81111;
-  }
+    h1 {
+      color: #E81111;
+      font-family: 'Blanka', Calibri, sans-serif; /* Apply the custom font to the header text */
+      margin-left: 10px;
+    }
   </style>
 </head>
 <body>
-  <header>
-  <div class="header-content">
-    <img src="/assets/msn-21-logo.jpg" alt="Logo" style="max-width: 50px; height: auto;">
-    <h1 style="font-family: Calibri; color: #E81111; margin-left: 10px;">msn-21 | Unblocked Games</h1>
-  </div>
-</header>
+  <header class="header-section">
+    <div class="header-content">
+      <img src="/assets/msn-21-logo.jpg" alt="Logo" style="max-width: 50px; height: auto;">
+      <h1>msn-21 | Unblocked Games</h1>
+    </div>
+  </header>
   <div class="image-container">
     <a href="https://msn-21.github.io/2048/"><img src="/assets/2048.jpg"></a>
     <a href="https://msn-21.github.io/a-small-world-cup/"><img src="/assets/a-small-world-cup.jpg"></a>
