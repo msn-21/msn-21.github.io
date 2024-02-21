@@ -59,7 +59,7 @@
       src: url('/blanka-font.otf') format('opentype'); /* Check the correct font file format */
     }
 
-    .header-section {
+.header-section {
       background-color: #E1E2E1;
       padding: 10px 0;
     }
@@ -67,27 +67,27 @@
     .header-content {
       display: flex;
       align-items: center;
-      justify-content: center;
-      background-color: #E1E2E1;
+      background-color: #E1E2E1; /* Move background-color to .header-section for consistency */
       padding: 10px;
+      justify-content: center;
     }
 
     .header-content img {
-      border-radius: 0;
+      margin-right: 20px;
     }
 
     h1 {
       color: #E81111;
-      font-family: 'Blanka', Calibri, sans-serif; /* Apply the custom font to the header text */
-      order: -1;
-      margin-left: 20px;
+      font-family: 'Blanka', Calibri, sans-serif;
+      margin-left: auto; /* Move the text to the center by pushing it to the right */
+      margin-right: auto; /* Separate center alignment to center the text */
     }
   </style>
 </head>
 <body>
   <header class="header-section">
     <div class="header-content">
-      <img src="/assets/msn-21-logo.jpg" alt="Logo" style="max-width: 150px; height: auto; margin-right: 20px;">
+      <img src="/assets/msn-21-logo.jpg" alt="Logo" style="max-width: 150px; height: auto;">
       <h1>msn-21 | Unblocked Games</h1>
     </div>
   </header>
