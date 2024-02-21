@@ -13,38 +13,38 @@
   <meta name="theme-color" content="#ffffff">
   <style>
     img {
-      height: 200px;
-      width: 200px;
+      max-width: 100%;
+      height: auto;
       border-radius: 40px;
     }
     body {
       margin: 0;
       background-image: url('background.png');
     }
-    
+
     .image-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
-    
+
     .image-container a {
       margin: 10px;
       text-align: center;
-      width: 20%;
+      width: 20%; /* 5 images per row */
     }
 
     @media screen and (max-width: 768px) {
       .image-container a {
-        width: 40%;
+        width: 40%; /* 2 images per row on smaller screens */
       }
     }
 
     @media screen and (max-width: 480px) {
       .image-container a {
-        width: 80%;
+        width: 80%; /* 1 image per row on mobile screens*/
       }
-    }  
+    }
   </style>
 </head>
 <body>
