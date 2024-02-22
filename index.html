@@ -85,7 +85,8 @@
       align-items: center;
       background-color: #E1E2E1;
       padding: 10px;
-      justify-content: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .header-content img {
@@ -98,6 +99,24 @@
       font-family: 'Blanka', Calibri, sans-serif;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    nav {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+    }
+
+    nav a {
+     margin: 0 10px;
+     color: #333;
+     text-decoration: none;
+     font-size: 14px;
+     font-family: 'Blanka', Calibri, sans-serif;
+    }
+
+    nav a:hover {
+     color: #000000;
     }
   </style>
 </head>
