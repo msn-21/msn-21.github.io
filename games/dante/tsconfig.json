@@ -1,0 +1,24 @@
+{
+  "extends": "@balsamic/eslint-config/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "strictPropertyInitialization": false,
+    "removeComments": false,
+    "allowUmdGlobalAccess": false
+    //    "exactOptionalPropertyTypes": false
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "swc": true,
+    "require": ["tsconfig-paths/register"],
+    "lib": ["ESNext"],
+    "target": "es2021",
+    "compilerOptions": {
+      "preserveConstEnums": true,
+      "module": "CommonJS",
+      "baseUrl": "."
+    }
+  },
+  "exclude": ["node_modules/**/*", "**/node_modules", "**/dist", "**/dist/**/*"]
+}
