@@ -1,0 +1,41 @@
+{
+
+
+  "update_url": "https://clients2.google.com/service/update2/crx",
+ 
+
+  "manifest_version": 3,
+  "name": "__MSG_AppName__",
+  "description": "__MSG_AppDesc__",
+  "default_locale": "en",
+
+  "version": "1.0.0",
+   "offline_enabled": true,
+
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+
+
+  "action": {
+
+    "default_icon": {
+
+         "256": "icons/128.png"
+    
+
+    }
+
+
+  },
+ 
+ 
+  "icons": {
+
+         "256": "icons/128.png"
+     
+
+  }
+}
