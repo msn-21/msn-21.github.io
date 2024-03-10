@@ -12,8 +12,20 @@
   <meta name="msapplication-config" content="https://msn-21.github.io/assets/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
+    <script>
+      function setFavicon(url) {
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+          link.type = 'image/x-icon';
+          link.rel = 'shortcut icon';
+          link.href = url;
+          document.getElementsByTagName('head')[0].appendChild(link);
+      }
+
+      setFavicon('/assets/favicon/favicon.ico');
+    </script>
+
   <link rel="stylesheet" href="style.css">
-  </head>
+</head>
 <body>
   <header class="header-section">
     <div class="header-content">
