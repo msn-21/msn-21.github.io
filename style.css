@@ -24,16 +24,50 @@
     }
 
     @media screen and (max-width: 768px) {
-      .image-container a {
-        margin: 10px;
-        width: 40%;
+      .header-content img {
+        width: 50px;
+        height: auto;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+    }
+ 
+    @media screen and (max-width: 768px) {
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
       }
     }
 
     @media screen and (max-width: 480px) {
-      .image-container a {
-        margin: 20px;
-        width: 80%;
+      .header-content img {
+        width: 30px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      nav a {
+        font-size: 10px;
+      }
+    }
+ 
+     @media screen and (max-width: 480px) {
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
       }
     }
 
