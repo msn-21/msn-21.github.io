@@ -37,9 +37,7 @@
       nav a {
         font-size: 10px;
       }
-    }
- 
-    @media screen and (max-width: 768px) {
+
       .image-container img {
         max-width: 100%;
         height: auto;
@@ -52,7 +50,7 @@
         width: 30px;
         height: auto;
         border-radius: 15px;
-    }
+      }
 
       h1 {
         font-size: 15px;
@@ -61,9 +59,7 @@
       nav a {
         font-size: 8px;
       }
-    }
- 
-     @media screen and (max-width: 480px) {
+
       .image-container img {
         max-width: 100%;
         height: auto;
