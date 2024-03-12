@@ -18,22 +18,22 @@
     }
 
     .image-container a {
-      margin: 5px;
+      margin: 0 5px 5px;
       text-align: center;
-      width: 20%;
+      width: calc(20% - 10px);
     }
 
     @media screen and (max-width: 768px) {
       .image-container a {
-        margin: 10px;
-        width: 40%;
+        margin: 0 10px 10px;
+        width: calc(40% - 20px);
       }
     }
 
     @media screen and (max-width: 480px) {
       .image-container a {
-        margin: 20px;
-        width: 80%;
+        margin: 0 20px 20px;
+        width: calc(80% - 40px);
       }
     }
 
