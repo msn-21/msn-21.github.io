@@ -1,0 +1,2 @@
+// NullJS
+console.log("NullJS");
