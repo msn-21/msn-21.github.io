@@ -1,11 +1,11 @@
     img {
-      width: 175px;
+      max-width: 100%;
       height: auto;
       border-radius: 40px;
     }
   
     body {
-      margin: 0 100px;
+      margin: 0;
       background: url('assets/background.jpg') no-repeat center center fixed;
       background-size: cover;
       padding-top: 140px;
@@ -18,46 +18,20 @@
     }
 
     .image-container a {
-      margin: 5px;
+      margin: 10px;
       text-align: center;
       width: 20%;
     }
 
     @media screen and (max-width: 768px) {
-      .header-content img {
-        width: 30px;
-        border-radius: 15px;
-      }
-
-      h1 {
-        font-size: 15px;
-      }
-
-      nav a {
-        font-size: 8px;
-      }
-
-      .image-container img {
-        border-radius: 8px;
+      .image-container a {
+        width: 40%;
       }
     }
 
     @media screen and (max-width: 480px) {
-      .header-content img {
-        width: 20px;
-        border-radius: 10px;
-      }
-
-      h1 {
-        font-size: 12px;
-      }
-
-      nav a {
-        font-size: 6px;
-      }
-
-      .image-container img {
-        border-radius: 5px;
+      .image-container a {
+        width: 80%;
       }
     }
 
