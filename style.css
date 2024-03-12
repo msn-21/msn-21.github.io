@@ -23,27 +23,6 @@
       width: 20%;
     }
 
-  @media screen and (max-width: 768px) {
-    .header-content img {
-      width: 50px;
-      height: auto;
-      border-radius: 20px;
-    }
-
-    h1 {
-      font-size: 25px;
-    }
-
-    nav a {
-      font-size: 10px;
-    }
-
-    .image-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
     @media screen and (max-width: 768px) {
       .header-content img {
         width: 30px;
