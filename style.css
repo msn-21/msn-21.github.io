@@ -68,6 +68,8 @@
     }   
     
     .header-content img {
+      width: 14vw;
+      height: auto;
       border-radius: 0px;
       margin-right: 20px;
     }
