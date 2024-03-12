@@ -5,7 +5,7 @@
     }
     
     body {
-      margin: 0 50;
+      margin: 0 50px;
       background: url('assets/background.jpg') no-repeat center center fixed;
       background-size: cover;
       padding-top: 140px;
@@ -13,26 +13,25 @@
 
     .image-container {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     .image-container a {
-      margin: 0 5px 5px;
+      margin: 0 5px;
       text-align: center;
       width: calc(20% - 10px);
     }
 
     @media screen and (max-width: 768px) {
       .image-container a {
-        margin: 0 10px 10px;
+        margin: 0 5px;
         width: calc(40% - 20px);
       }
     }
 
     @media screen and (max-width: 480px) {
       .image-container a {
-        margin: 0 20px 20px;
+        margin: 0 5px;
         width: calc(80% - 40px);
       }
     }
