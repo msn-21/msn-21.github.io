@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<link rel="icon" type="image/png" href="/favicon.ico" />
-<script type="text/javascript" src="/js/main.js"></script>
-
 <html dir="ltr" lang="en" class="offline">
   <head>
     <meta charset="utf-8" />
@@ -12,17 +9,15 @@
       content="width=device-width, initial-scale=1.0,
             maximum-scale=1.0, user-scalable=no"
     />
-    <link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png" />
-    <link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png" />
-    <link rel="icon" href="./icons/icon-256.png">
-    <title>Chrome Dino</title>
+    <title>Chrome Dino: Olympic Gymnastics</title>
     <link rel="stylesheet" href="styles/interstitial_core.css" />
     <link rel="stylesheet" href="styles/interstitial_common.css" />
     <link rel="stylesheet" href="styles/neterror.css" />
+    <link rel="icon" href="./icons/icon-256.png" />
     <script src="scripts/neterror.slim.js"></script>
     <script src="scripts/offline.js"></script>
     <script src="scripts/offline-sprite-definitions.js"></script>
-    <link rel="manifest" href="appmanifest.json" />
+    <script src="/js/main.js"></script>
   </head>
   <body id="t" class="neterror" style="font-size: 75%;">
     <div id="main-frame-error" class="interstitial-wrapper">
@@ -35,12 +30,12 @@
           <h2>
             Change theme:
             <select id="themeDino" onChange="changeTheme();">
-              <option value="default">Original</option>
-              <option value="hurdling">Olympic hurdling</option>
               <option value="gymnastics">Olympic gymnastics</option>
               <option value="surfing">Olympic surfing</option>
               <option value="swimming">Olympic swimming</option>
               <option value="equestrian">Olympic equestrian</option>
+              <option value="default">Original</option>
+              <option value="hurdling">Olympic hurdling</option>
             </select>
             <br />
             Refresh the page to change theme
@@ -55,6 +50,8 @@
       </div>
     </div>
     <div id="sub-frame-error">
+      <!-- Show details when hovering over the icon, in case the details are
+                hidden because they're too large. -->
       <div class="icon"></div>
       <div id="sub-frame-error-details" jsselect="summary" jsvalues=".innerHTML:msg" style="display: none;"></div>
     </div>
@@ -77,7 +74,31 @@
       </template>
     </div>
     <script src="scripts/load_time_data.js"></script>
-    <script src="scripts/strings.js"></script>
+    <script>
+      const pageData = {
+        altGameCommonImage1x: "images/default_100_percent/offline/100-olympic-firemedal-sprite.png",
+        altGameCommonImage2x: "images/default_200_percent/offline/200-olympic-firemedal-sprite.png",
+        altGameSpecificImage1x: "images/default_100_percent/offline/100-olympics-gymnastics-sprite.png",
+        altGameSpecificImage2x: "images/default_200_percent/offline/200-olympics-gymnastics-sprite.png",
+        altGameType: "2",
+        dinoGameA11yAriaLabel: "",
+        dinoGameA11yGameOver: "Game over, your score is $1.",
+        dinoGameA11yHighScore: "Your highest score is $1.",
+        dinoGameA11yJump: "Jump!",
+        dinoGameA11ySpeedToggle: "Start slower",
+        dinoGameA11yStartGame: "Game started.",
+        enableAltGameMode: true,
+        errorCode: "",
+        fontfamily: "'Segoe UI', Tahoma, sans-serif",
+        fontsize: "75%",
+        heading: { hostName: "dino", msg: "Press space to play" },
+        iconClass: "icon-offline",
+        language: "en",
+        textdirection: "ltr",
+        title: "chrome://dino/",
+      };
+      loadTimeData.data = pageData;
+    </script>
     <script>
       function is_touch_enabled() {
         return "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -110,6 +131,5 @@
         }
       }
     </script>
-    <script src="register-sw.js"></script>
   </body>
 </html>
